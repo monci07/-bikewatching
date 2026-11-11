@@ -110,7 +110,7 @@ map.on("load", async () => {
         let startedMinutes = minutesSinceMidnight(trip.started_at);
         departuresByMinute[startedMinutes].push(trip);
         let endedMinutes = minutesSinceMidnight(trip.ended_at);
-        departuresByMinute[endedMinutes].push(trip);
+        arrivalsByMinute[endedMinutes].push(trip);
 		return trip;
       },
     );
